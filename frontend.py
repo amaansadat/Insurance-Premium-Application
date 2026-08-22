@@ -145,6 +145,20 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
 
 st.divider()
 
+st.table(df)
+
+st.markdown(
+    """
+    <hr style="
+        margin-top: 10px;
+        margin-bottom: 8px;
+        border: none;
+        border-top: 1px solid #d9d9d9;
+    ">
+    """,
+    unsafe_allow_html=True
+)
+
 st.caption(
-    "Built using Streamlit • FastAPI • Scikit-Learn • Docker • Render"
+    "Built using Scikit-Learn • FastAPI • Docker • Render • Streamlit"
 )
