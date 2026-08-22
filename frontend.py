@@ -134,6 +134,10 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
             columns=["Premium Category", "Probability"]
 )
 
+        df["Probability"] = df["Probability"].apply(
+            lambda x: f"{x * 100:.2f}%"
+)
+
         st.table(df)
 
     except Exception as e:
